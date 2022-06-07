@@ -7,10 +7,25 @@
 }
 
 .card-content {
-    padding: 1.5em;
+    padding: var(--padding-card);
     background: linear-gradient(
         hsl(0 0% 0% / 0),
         hsl(20 0% 0% / 0.3) 20%,
         hsl(0 0% 0% / 1)
     );
+}
+.card-title {
+    position: relative;
+    width: max-content;
+    outline: 1px solid red;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left:calc(var(--padding-card)* -1);
+    bottom: 0;
+    width: calc(100% + var(--padding-card));
+    background: var(--clr-accent-400);
 }
