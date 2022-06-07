@@ -1,0 +1,17 @@
+/* Imported Font(s) */
+@import url();
+
+/* Custom variables */
+:root {
+    --color-background-main: gray;
+    --color-text-main: white;
+    --color-border-main: black;
+}
+
+/* Default behavior reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
