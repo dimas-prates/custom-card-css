@@ -3,15 +3,22 @@
 
 /* Custom variables */
 :root {
-    --color-background-main: gray;
-    --color-text-main: white;
-    --color-border-main: black;
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
 }
 
 /* Default behavior reset */
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background: var(--clr-neutral-900);
 }
