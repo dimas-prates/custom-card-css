@@ -5,6 +5,7 @@
     padding: 10rem 0 0;
     max-width: 35ch;
     border-radius: 0.5rem;
+    border: 0.09rem solid var(--clr-accent-400);
     overflow: hidden;
     transition: transform 400ms ease;
 }
